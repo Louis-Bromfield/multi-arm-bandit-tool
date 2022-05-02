@@ -1,0 +1,16 @@
+.tab-selector {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.tab-selector-option {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.tab-selector-option:hover {
+    background-color: rgb(168, 39, 168);
+    color: #fff;
+}
