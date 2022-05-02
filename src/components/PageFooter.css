@@ -4,6 +4,11 @@
     margin: 5%;
 }
 
+.feedback-form-item {
+    display: flex;
+    flex-direction: column;
+}
+
 .creator-container {
     width: 20%;
 }

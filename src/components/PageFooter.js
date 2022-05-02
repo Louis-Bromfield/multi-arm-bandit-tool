@@ -1,6 +1,6 @@
 import React from 'react';
 import './PageFooter.css';
-import logo from '../logo.svg';
+import LouisPic from '../Capture2.PNG';
 
 function PageFooter() {
   return (
@@ -12,21 +12,48 @@ function PageFooter() {
             pedagogical, or any other purposes, we would love to hear from you.
             </p>
             {/* Redo with proper form JSX */}
-            <h4>Name</h4>
-            <input type="text" />
-            <br />
-            <h4>Institution</h4>
-            <input type="text" />
-            <br />
-            <h4>Comments</h4>
-            <input type="text" />
+            <form className="feedback-form">
+                <fieldset>
+                    <div className="feedback-form-item">
+                        <label htmlFor="name"><strong>Name</strong></label>
+                        <input 
+                            type="text"
+                            className="text-input-short"
+                            name="name"
+                            size="100" 
+                        />
+                    </div>
+                <br />
+                <div className="feedback-form-item">
+                    <label htmlFor="institution"><strong>Institution</strong></label>
+                    <input 
+                        type="text"
+                        className="text-input-short"
+                        name="institution"
+                        size="100" 
+                    />
+                </div>
+                <br />
+                <div className="feedback-form-item">
+                    <label htmlFor="comments"><strong>Comments</strong></label>
+                    <textarea
+                        className="text-input-long"
+                        name="name"
+                        cols="100"
+                        rows="5"
+                    />
+                </div>
+                <button>Submit</button>
+                </fieldset>
+            </form>
         </div>
         <hr />
         <div className="about-us-container">
             <h3>Creators</h3>
             <div className="creator-container">
-                <img src={logo} alt="" />
+                <img src={LouisPic} alt="" />
                 <h4>Louis Bromfield</h4>
+                <h4>Politics PhD Student @ Swansea University</h4>
                 <h4>908747@swansea.ac.uk</h4>
             </div>
         </div>

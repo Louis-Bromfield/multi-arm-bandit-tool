@@ -13,6 +13,9 @@ function TabSelector() {
         <div className="tab-selector-option">
             <h3>Multi-Arm Bandits Explained</h3>
         </div>
+        <div className="tab-selector-option">
+            <h3>Change Log</h3>
+        </div>
     </div>
   )
 }
